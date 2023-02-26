@@ -6,7 +6,11 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
     <PropertyGroup>
+        <!-- Replace the following with your game install path, ex: -->
+        <!--
         <SONS_INSTALL>E:\SteamLibrary\steamapps\common\Sons Of The Forest</SONS_INSTALL>
+        -->
+        <SONS_INSTALL>REPLACE_ME</SONS_INSTALL>
     </PropertyGroup>
 
     <ItemGroup>
