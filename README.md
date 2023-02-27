@@ -9,10 +9,8 @@ Currently, only 2 keys can be bound as only two tools/weapons can be put on your
 - Install [the latest BepInEx](https://builds.bepinex.dev/projects/bepinex_be) bleeding edge, 667+
 - Here's an [installation guide](https://docs.bepinex.dev/master/articles/user_guide/installation/unity_il2cpp.html)
 - Download the latest version from the [releases page](https://github.com/matt-harp/SotF-Hotkeys/releases)
-- Place the mod's .dll into your Mods folder<sup>1</sup> in your game install path
+- Place the mod's .dll into the `BepInEx/plugins` folder
 - Run the game and enjoy -- press 1 or 2 to use weapons bound to your backpack
-
-<sup>1</sup> create the folder if needed
 
 ### Issues
 
