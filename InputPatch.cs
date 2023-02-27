@@ -1,22 +1,23 @@
-﻿using Il2CppTheForest.Utils;
-using MelonLoader;
+﻿using HarmonyLib;
+using Sons.Input;
+using TheForest.Utils;
 using UnityEngine;
 
 namespace Hotkeys;
 
-public class HotkeyMod : MelonMod
+[HarmonyPatch]
+public class InputPatch
 {
-    public override void OnInitializeMelon()
+    [HarmonyPatch(typeof(InputEventsManager), "Update")]
+    [HarmonyPostfix]
+    static void Update()
     {
-        Melon<HotkeyMod>.Logger.Msg("Hotkeys initialized, press 1/2 to access tools bound to your backpack.");
-    }
-
-    public override void OnUpdate()
-    {
+        if (LocalPlayer._instance == null) return;
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             LocalPlayer.Inventory.TryEquip(LocalPlayer.Inventory._quickSlots._items[0]._itemId, false, false);
         }
+
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             LocalPlayer.Inventory.TryEquip(LocalPlayer.Inventory._quickSlots._items[1]._itemId, false, false);
