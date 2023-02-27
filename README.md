@@ -6,7 +6,7 @@ Currently, only 2 keys can be bound as only two tools/weapons can be put on your
 
 ### Install
 
-- Install [the latest BepInEx](https://builds.bepinex.dev/projects/bepinex_be) bleeding edge, 667+
+- Install [the latest BepInEx **IL2CPP**](https://builds.bepinex.dev/projects/bepinex_be) bleeding edge, 667+
 - Here's an [installation guide](https://docs.bepinex.dev/master/articles/user_guide/installation/unity_il2cpp.html)
 - Download the latest version from the [releases page](https://github.com/matt-harp/SotF-Hotkeys/releases)
 - Place the mod's .dll into the `BepInEx/plugins` folder
