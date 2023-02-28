@@ -1,3 +1,4 @@
+# Hotkeys have been patched into the game!
 # Hotkeys
 
 A simple mod to restore number key hotkey functionality from The Forest
